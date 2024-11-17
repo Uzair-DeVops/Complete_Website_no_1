@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> My First Website</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- hero -->
+  <section id="hero">
+    <!-- hero container -->
+    <div class="container max-w-6xl mx-auto px-6 py-12">
+      <!-- menu/logo container -->
+      <nav class="flex items-center justify-between font-bold text-white">
+        <!-- Logo -->
+        <span id="redox" class="text-2xl">RedoxComputers</span>
+        <!-- menu -->
+        <div class="hidden h-10 uppercase md:flex md:space-x-8">
+          <div class="group">
+            <a href="#feature">About</a>
+            <div class=" group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div class="group">
+            <a href="#courses">Courses</a>
+            <div class=" group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div class="group">
+            <a href="https://uzair-devops.github.io/Image_gallery/" target="_blank">Images</a>
+            <div class="m group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div class="group">
+            <a href="https://uzair-devops.github.io/Products_project/ " target="_blank">Products</a>
+            <div class=" group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div class="group">
+            <a href="https://uzair-devops.github.io/Login_page/" target="_blank">Login</a>
+            <div class=" group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+        </div>
+
+        <!-- hamburger -->
+         <div class="md:hidden">
+          <button 
+          id="menu-btn"
+          type="button"
+          class="z-40 block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+         </div>
+      </nav>
+      <!-- mobile menu  -->
+       <div id="menu" class="absolute top-0 bottom-0 left-0  flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+        <a href="#about" class="hover:text-pink-500 "> About</a>
+        <a href="#courses" class="hover:text-pink-500"> Careers</a>
+        <a href="https://uzair-devops.github.io/Image_gallery/"  target="_blank" class="hover:text-pink-500"> Images</a>
+        <a href="https://uzair-devops.github.io/Products_project/" target="_blank" class="hover:text-pink-500"> Products</a>
+        <a href="https://uzair-devops.github.io/Login_page/" target="_blank" class="hover:text-pink-500"> Login</a>
+
+
+       </div>
+      <div
+        class="max-w-lg mt-32 mb-32 p-4 fonts-sans text-4xl text-white uppercase border-2 md:p-10 md: m-32 md: mx-0 md:text-6xl">
+        Welcome to Redox Computers      </div>
+    </div>
+  </section>
+  <!-- Feature Sec -->
+  <section id="feature">
+    <!-- feature con -->
+    <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
+      <!-- image -->
+      <img src="images/desktop/main.jpg" alt="" class="img-d" />
+      <!-- text con -->
+      <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
+        <h2 id="about" class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center md:mt-0 md:text-left">
+          Empowering Future Tech Minds     </h2>
+        <p class="max-w-lg pl-3 text-center md:text-left">
+          We offer hands-on courses in programming, web development,
+          AI, and more, tailored for all skill levels. Our mission 
+          is to empower you with the skills to excel in the digital world.
+         </p>
+      </div>
+    </div>
+  </section>
+  <!-- creation sec -->
+  <section id="creations">
+    <!-- con -->
+    <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+      <!-- con header -->
+      <div class="flex justify-center mb-20 md:justify-between">
+        <h2 id="courses" class="text-4xl text-center uppercase md:text-left md:text-5xl md:pl-10">
+          Our Courses
+        </h2>
+        <button class="hidden btn md:block">See All</button>
+      </div>
+      <!-- items con -->
+      <div
+        class="flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
+        <!-- item one -->
+
+        <div class="group relative overflow-hidden md:w-1/4">
+      
+          <!-- Desktop img -->
+          <img  src="images/desktop/w2.jpg "
+            class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+          </img>
+          <!-- mobile image  -->
+          <img src="images/mobile/w2.jpg" class="img-m  md:hidden ">
+          </img>
+          <!-- item gradient -->
+          <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+          </div></a>
+          <!-- item text -->
+          <h5
+            class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                Website Development
+          </h5>
+
+
+
+        </div>
+
+        <!-- item 2 -->
+
+        <div class="group relative overflow-hidden md:w-1/4">
+          <!-- Desktop img -->
+          <img src="images/desktop/apps.jpg"
+            class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+          </img>
+          <!-- mobile image  -->
+          <img src="images/mobile/app.jpg " class=" img-m w-full md:hidden ">
+          </img>
+          <!-- item gradient -->
+          <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+          </div></a>
+          <!-- item text -->
+          <h5
+            class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+            IOS app Development
+          </h5>
+
+
+
+        </div>
+
+        <!-- item 3 -->
+
+        <div class="group relative overflow-hidden md:w-1/4">
+          <!-- Desktop img -->
+          <img src="images/desktop/andrioid_s.jpg"
+            class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+          </img>
+          <!-- mobile image  -->
+          <img src="images/mobile/android.jpg" class="img-m w-full md:hidden ">
+          </img>
+          <!-- item gradient -->
+          <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+          </div></a>
+          <!-- item text -->
+          <h5
+            class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+            Android app Development
+          </h5>
+
+
+
+        </div>
+
+
+        <!-- item 4  -->
+
+        <div class="group relative overflow-hidden md:w-1/4">
+          <!-- Desktop img -->
+          <img src="images/desktop/gd.jpg"
+            class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+          </img>
+          <!-- mobile image  -->
+          <img src="images/mobile/gd.jpg" class="img-m w-full md:hidden ">
+          </img>
+          <!-- item gradient -->
+          <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+          </div></a>
+          <!-- item text -->
+          <h5
+            class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+            Graphic Designer
+          </h5>
+
+
+   
+        </div>
+
+
+      </div>
+
+            <!-- items con 2-->
+            <div
+            class="flex flex-col justify-between w-full mt-10 space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
+            <!-- item one -->
+    
+            <div class="group relative overflow-hidden md:w-1/4">
+              <!-- Desktop img -->
+              <img src="images/desktop/Python2.png"
+                class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+              </img>
+              <!-- mobile image  -->
+              <img src="images/mobile/python.jpg" class="img-m w-full md:hidden ">
+              </img>
+              <!-- item gradient -->
+              <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+                class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+              </div></a>
+              <!-- item text -->
+              <h5
+                class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                Python Developer
+              </h5>
+    
+    
+    
+            </div>
+    
+            <!-- item 2 -->
+    
+            <div class="group relative overflow-hidden md:w-1/4">
+              <!-- Desktop img -->
+              <img src="images/desktop/game.jpg"
+                class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+              </img>
+              <!-- mobile image  -->
+              <img src="images/mobile/game.jpg " class="img-m w-full md:hidden ">
+              </img>
+              <!-- item gradient -->
+              <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+                class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+              </div></a>
+              <!-- item text -->
+              <h5
+                class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                Game Development
+              </h5>
+    
+    
+    
+            </div>
+    
+            <!-- item 3 -->
+    
+            <div class="group relative overflow-hidden md:w-1/4">
+              <!-- Desktop img -->
+              <img src="images/desktop/ai2.jpg"
+                class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+              </img>
+              <!-- mobile image  -->
+              <img src="images/mobile/ai.jpg" class="img-m w-full md:hidden ">
+              </img>
+              <!-- item gradient -->
+              <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+                class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+              </div></a>
+              <!-- item text -->
+              <h5
+                class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                AI Developer
+              </h5>
+    
+    
+    
+            </div>
+    
+    
+            <!-- item 4  -->
+    
+            <div class="group relative overflow-hidden md:w-1/4"> 
+              <!-- Desktop img -->
+              <img src="images/desktop/seo2.jpg"
+                class="img-d hidden w-full duration-200 md:block group-hover:scale-110">
+              </img>
+              <!-- mobile image  -->
+              <img src="images/mobile/seo.jpg" class="img-m w-full md:hidden ">
+              </img>
+              <!-- item gradient -->
+              <a href="https://uzair-devops.github.io/Price_project/" target="_blank"><div
+                class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+              </div></a>
+              <!-- item text -->
+              <h5
+                class="absolute px-6 duration-200 width-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                Seo Developer
+              </h5>
+    
+    
+       
+            </div>
+    
+    
+          </div>
+          <!-- bottom button cont -->
+           <div class="flex justify-center mt-10 md:hidden">
+            <button class="btn w-full md:hidden">See All</button>
+           </div>
+
+        </div>
+  </section>
+<footer class="bg-black">
+  <!-- container -->
+   <div class="container max-w-6xl py-10 mx-auto">
+    <!-- footer container -->
+     <div class="flex flex-col items-center mb-8 sapce-y-60 md:flex-row md:space-y-0 md:justify-between md:items-start " >
+
+      <!-- menu and logo con -->
+       <div class="flex flex-col item-center space-y-8 md:items-start md:space-y-4 ">
+        <a href="#redox"><span class="text-2xl text-white">RedoxComputers</span><a>
+
+       </div>
+       <!-- menu con -->
+
+       <div class="flex flex-col items-center space-y-4 mt-5 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+        <!-- item 1 -->
+         <div class="h-10 group">
+          <a href="#about">About</a> 
+          <div class="  group-hover:border-b group-hover:border-blue-50">
+
+          </div>
+         </div>
+                 <!-- item 2 -->
+                 <div class="h-10 group">
+                  <a href="#courses">Career</a> 
+                  <div class="  group-hover:border-b group-hover:border-blue-50">
+        
+                  </div>
+                 </div>
+                         <!-- item 3 -->
+         <div class="h-10 group">
+          <a href="https://uzair-devops.github.io/Image_gallery/" target="_blank">Images</a> 
+          <div class="  group-hover:border-b group-hover:border-blue-50">
+
+          </div>
+         </div>
+                 <!-- item 4 -->
+                 <div class="h-10 group">
+                  <a href="https://uzair-devops.github.io/Products_project/" target="_blank">Prodcts</a> 
+                  <div class="  group-hover:border-b group-hover:border-blue-50">
+        
+                  </div>
+                 </div>
+                         <!-- item 5 -->
+         <div class="h-10 group">
+          <a href="https://uzair-devops.github.io/Login_page/" target="_blank">Login</a> 
+          <div class="  group-hover:border-b group-hover:border-blue-50">
+
+          </div>
+         </div>
+
+       </div>
+       <!-- social media con -->
+        <div class="flex flex-col items-start  justify-between space-y-4 text-gray-500" >
+          <!-- items con -->
+           <div class="flex mx-auto items-center justify-center space-x-4 md:justify-end md:mx-0">
+            <!-- icon 1 -->
+             <div class="h-8 group">
+              <a href="https://web.facebook.com/login/?_rdc=1&_rdr">
+                <img src="images/icon-facebook.svg" alt="" class="h-6">
+              </a>
+
+             </div>
+                         <!-- icon 2 -->
+                         <div class="h-8 group">
+                          <a href="https://www.instagram.com/">
+                            <img src="images/icon-instagram.svg" alt="" class="h-6">
+                          </a>
+            
+                         </div>
+            
+                                     <!-- icon 3 -->
+             <div class="h-8 group">
+              <a href="https://www.pinterest.com/">
+                <img src="images/icon-pinterest.svg" alt="" class="h-6">
+              </a>
+
+             </div>
+
+                         <!-- icon 4 -->
+                         <div class="h-8 group">
+                          <a href="https://twitter.com/login">
+                            <img src="images/icon-twitter.svg" alt="" class="h-6">
+                          </a>
+            
+                         </div>
+            
+ 
+
+         
+           </div>
+                          <!-- copy -->
+                          <div class="font-bold">
+                            &copy; 2022 RedoxComputers. All Rights Reserved
+                           </div>
+        </div>
+     </div>
+   </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
